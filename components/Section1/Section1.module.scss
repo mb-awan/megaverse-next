@@ -1,0 +1,155 @@
+@import "/app/variables";
+
+.section1 {
+  height: 95vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .container {
+    margin-top: 175px;
+    // border: 2px solid black;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media screen and (max-width: $xlg-screen) {
+      width: 90%;
+    }
+    @media screen and (max-width: $lg-screen) {
+      width: 80%;
+    }
+    @media screen and (max-width: $sm-screen) {
+      width: 90%;
+    }
+
+    .intro {
+      width: 50%;
+
+      @media screen and (max-width: $lg-screen) {
+        width: 100%;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // border: 2px solid black;
+
+      .statementHeading {
+        font-size: 4rem;
+        line-height: 1;
+        font-family: "DM Sans";
+        font-weight: 700;
+
+        @media screen and (max-width: $sm-screen) {
+          font-size: 3rem;
+        }
+      }
+
+      .description {
+        margin-top: 3rem;
+        line-height: 1;
+        font-family: "DM Sans";
+        font-weight: 300;
+        font-size: 1.3em;
+        color: #8a90a2;
+      }
+
+      .btns {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        // border: 2px solid black;
+        button {
+          width: 49%;
+          font-family: "DM Sans";
+          font-weight: 500;
+          font-size: 1rem;
+          padding: 1rem;
+          border-radius: 5px;
+
+          @media screen and (max-width: $sm-screen) {
+            font-size: 0.9rem;
+            padding: 0.7rem 1px 0.7rem 1px;
+          }
+          @media screen and (max-width: $xsm-screen) {
+            width: 100%;
+            margin-top: 1rem;
+          }
+        }
+        .visitCaseBtn {
+          background-color: #3093d5;
+          color: #fff;
+          border: none;
+        }
+        .aboutBtn {
+          color: #0a273e;
+          background-color: #fff;
+          border: 2px solid #0a273e;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            margin-left: 10px;
+            @media screen and (max-width: $sm-screen) {
+              margin-left: 8px;
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
+
+    .computeImage {
+      width: 48%;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      // border: 2px solid black;
+      @media screen and (max-width: $xlg-screen) {
+        justify-content: center;
+        margin-top: 2rem;
+        img {
+          width: 100%;
+        }
+      }
+      img {
+        width: 75%;
+        height: auto;
+      }
+
+      @media screen and (max-width: $lg-screen) {
+        width: 100%;
+      }
+    }
+
+    .technologies {
+      width: 50%;
+      @media screen and (max-width: $lg-screen) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+      display: flex;
+      padding: 10px;
+      flex-wrap: wrap;
+      margin: 0;
+      // border: 2px solid black;
+      gap: 2rem;
+      justify-content: center;
+
+      img {
+        height: 50px;
+        margin: 0.5rem;
+        padding: 0;
+      }
+    }
+  }
+}
