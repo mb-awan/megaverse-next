@@ -1,0 +1,56 @@
+@import "/app/variables";
+
+.cards {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $md-screen) {
+    width: 100%;
+  }
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2); /* The box shadow at the bottom */
+  padding: 2rem;
+
+  margin-bottom: 2rem;
+
+  .cardIcon {
+    width: 20%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .cardContent {
+    width: 75%;
+    h1 {
+      font-size: "DM Sans";
+      color: #292930;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: "DM Sans";
+      font-weight: 400;
+      color: #8a90a2;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      border: none;
+      background: none;
+      font-weight: 700;
+      font-size: "DM Sans";
+      cursor: pointer;
+
+      img {
+        margin-left: 10px;
+        width: 15px;
+      }
+    }
+  }
+}

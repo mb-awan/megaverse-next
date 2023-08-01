@@ -1,11 +1,12 @@
 @import "/app/variables";
 
 .section1 {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  padding-bottom: 3rem;
 
   .container {
     margin-top: 175px;
@@ -143,7 +144,6 @@
       margin: 0;
       // border: 2px solid black;
       gap: 2rem;
-      justify-content: center;
 
       img {
         height: 50px;

@@ -1,4 +1,11 @@
-import { Logo, Navbar, Section1 } from "@/components";
+import {
+  Logo,
+  Navbar,
+  Section1,
+  Section2,
+  Section3,
+  Section4,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +13,9 @@ export default function Home() {
       <Logo />
       <Navbar />
       <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
     </div>
   );
 }

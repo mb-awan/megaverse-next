@@ -1,0 +1,102 @@
+@import "/app/variables";
+
+.section2 {
+  background-color: #0a273e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  z-index: 2;
+
+  .whatWeDoText {
+    width: 60%;
+    color: #ffffff;
+    font-family: "DM Sans";
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    span {
+      text-decoration: underline;
+      color: #30a8ff;
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: $md-screen) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $sm-screen) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .successContainers {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    @media screen and (max-width: $xlg-screen) {
+      width: 90%;
+    }
+
+    .containerN {
+      width: 31%;
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.9rem;
+
+      .icon {
+        width: 20%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      div {
+        width: 60%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h6 {
+          font-size: 2rem;
+          font-family: "DM Sans";
+        }
+        p {
+          font-size: 1rem;
+          font-family: "DM Sans";
+        }
+      }
+      @media screen and (max-width: $md-screen) {
+        width: 80%;
+        margin-top: 1rem;
+      }
+    }
+    .container1 {
+      background-color: #ffdc60;
+      @extend .containerN;
+    }
+    .container2 {
+      background-color: #82cefd;
+      @extend .containerN;
+    }
+
+    .container3 {
+      background-color: #ffadad;
+      @extend .containerN;
+    }
+  }
+}
