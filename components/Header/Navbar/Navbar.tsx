@@ -18,7 +18,7 @@ const Navbar = () => {
             Home
           </button>
           <button type="button" className={classes.contactBtn}>
-            contact Us
+            Contact Us
           </button>
         </div>
         <div className={classes.navRightBtns}>

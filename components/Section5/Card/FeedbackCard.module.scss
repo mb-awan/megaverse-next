@@ -1,0 +1,116 @@
+@import "/app/variables";
+
+.feedbackCard {
+  width: 32%;
+  margin-top: 1rem;
+  background-color: #3a3a42;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: "DM Sans";
+  border-radius: 20px;
+
+  @media screen and (max-width: $xlg-screen) {
+    width: 48%;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: $md-screen) {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .avatar {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+      @media screen and (max-width: $xxlg-screen) {
+        width: 30%;
+      }
+      @media screen and (max-width: $xlg-screen) {
+        width: 20%;
+      }
+      @media screen and (max-width: $sm-screen) {
+        margin-left: 4%;
+      }
+      @media screen and (max-width: $xsm-screen) {
+        margin-left: 3%;
+        width: 30%;
+      }
+    }
+    .info {
+      width: 50%;
+      @media screen and (max-width: $xxlg-screen) {
+        width: 70%;
+      }
+      @media screen and (max-width: $xlg-screen) {
+        width: 50%;
+      }
+      @media screen and (max-width: $sm-screen) {
+        width: 70%;
+      }
+      @media screen and (max-width: $sm-screen) {
+        width: 65%;
+      }
+      padding-left: 1rem;
+      .name {
+        font-family: "DM Sans";
+        font-weight: 700;
+        @media screen and (max-width: $xxlg-screen) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: $lg-screen) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: $sm-screen) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: $xsm-screen) {
+          font-size: 0.9rem;
+        }
+      }
+      .occupation {
+        font-family: "DM Sans";
+        margin-top: 0.5rem;
+        color: #8a90a2;
+        font-weight: 500;
+        @media screen and (max-width: $xxlg-screen) {
+          font-size: 1rem;
+          margin-top: 0.2rem;
+        }
+        @media screen and (max-width: $xlg-screen) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: $sm-screen) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .ratings {
+      width: 28%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      @media screen and (max-width: $sm-screen) {
+        margin-left: 2%;
+      }
+    }
+  }
+
+  .body {
+    margin-top: 1rem;
+    p {
+      font-family: "DM Sans";
+      line-height: 30px;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+}

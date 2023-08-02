@@ -1,8 +1,121 @@
 @import "/app/variables";
 
 .section4 {
-  background-color: #c7c7c7;
+  background-color: #ffffff;
   min-height: 100vh;
   z-index: 2;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow-x: hidden;
+
+  .header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $xxlg-screen) {
+      width: 90%;
+    }
+
+    justify-content: space-between;
+    .heading {
+      margin-bottom: 2rem;
+      width: 30%;
+
+      @media screen and (max-width: $md-screen) {
+        width: 100%;
+      }
+
+      img {
+        width: 10px;
+      }
+      .text {
+        margin-left: 10px;
+        color: #8a90a2;
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+      h1 {
+        margin-top: 1rem;
+        color: #292930;
+        font-size: 3rem;
+
+        @media screen and (max-width: $lg-screen) {
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: $md-screen) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: $sm-screen) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .workNavBar {
+      width: 68%;
+      @media screen and (max-width: $md-screen) {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+        // border: 2px solid black;
+
+        ul {
+          // border: 2px solid black;
+          display: flex;
+          li {
+            list-style: none;
+            padding: 5px;
+            margin: 3px;
+            flex-grow: 1;
+            color: #8a90a2;
+            // color: #292930 for active classes
+            font-family: "DM Sans";
+            font-weight: 500;
+            font-size: 1.7rem;
+
+            @media screen and (max-width: $xxlg-screen) {
+              font-size: 1.5rem;
+            }
+            @media screen and (max-width: $xlg-screen) {
+              font-size: 1.3rem;
+            }
+            @media screen and (max-width: $lg-screen) {
+              font-size: 1rem;
+            }
+            @media screen and (max-width: $sm-screen) {
+              margin: 1px;
+              padding: 3px;
+              font-size: 0.7rem;
+            }
+            @media screen and (max-width: $xsm-screen) {
+              margin: 1px;
+              padding: 3px;
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 2rem;
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .contentSections {
+      width: 49%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

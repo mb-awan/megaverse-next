@@ -1,29 +1,30 @@
 @import "/app/variables";
 
-.section3 {
-  background-color: #f7f8fd;
+.section5 {
+  background-color: #0a273e;
   min-height: 100vh;
   z-index: 2;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+
   overflow-x: hidden;
 
-  .content {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+  .header {
+    width: 100%;
 
     @media screen and (max-width: $xlg-screen) {
       width: 90%;
     }
 
     justify-content: space-between;
-    .whatWeDo {
+    .heading {
       margin-bottom: 2rem;
       width: 48%;
+      margin: auto;
+      text-align: center;
 
       @media screen and (max-width: $md-screen) {
-        width: 100%;
+        width: 90%;
       }
 
       img {
@@ -36,9 +37,10 @@
         margin-right: 1rem;
       }
       h1 {
-        margin-top: 1rem;
-        color: #292930;
+        margin-top: 0.7rem;
+        color: #ffffff;
         font-size: 4rem;
+        font-weight: 700;
 
         @media screen and (max-width: $lg-screen) {
           font-size: 3.5rem;
@@ -51,5 +53,14 @@
         }
       }
     }
+  }
+
+  .content {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    margin: auto;
+    gap: 1%;
   }
 }

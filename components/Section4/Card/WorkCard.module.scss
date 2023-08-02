@@ -1,0 +1,84 @@
+@import "/app/variables";
+
+.workCard {
+  width: 95%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $md-screen) {
+    width: 100%;
+  }
+
+  background-color: #f3f5fb;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* The box shadow at the bottom */
+  padding: 2rem;
+
+  margin-bottom: 2rem;
+
+  .cardImage {
+    width: 40%;
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .cardContent {
+    width: 55%;
+    h1 {
+      font-size: "DM Sans";
+      color: #292930;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: "DM Sans";
+      font-weight: 400;
+      color: #8a90a2;
+    }
+
+    div {
+      margin-top: 1rem;
+      cursor: pointer;
+      display: flex;
+      width: 80%;
+      align-items: baseline;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.firstWorkCard {
+  @extend .workCard;
+
+  flex-direction: column;
+  align-items: center;
+  .cardImage {
+    width: 90%;
+    img {
+      height: 300px;
+    }
+  }
+
+  .cardContent {
+    width: 90%;
+    h1 {
+      margin-top: 1.5rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    div {
+      margin-top: 2rem;
+    }
+  }
+}
