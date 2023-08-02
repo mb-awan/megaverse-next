@@ -36,17 +36,108 @@ const Section6 = () => {
 
           <h1>Get latest updates and deals</h1>
           <div className={classes.subscriptionForm}>
-            <input type="text" name="email" placeholder="Enter your email" />
+            <input type="text" name="email" placeholder="Enter your mail" />
             <button type="button">
               Subscribe
               <img src="/assests/images/arrow-right-white.svg" alt="arrow" />
             </button>
           </div>
+          <img
+            className={classes.borderDesignImg}
+            src="/assests/images/subscription-box-side.png"
+            alt=""
+          />
         </div>
       </div>
+      <div className={classes.footer}>
+        <img src="/assests/images/footer-bg.png" alt="footer-bg" />
 
-      <div className={classes.wavyFooter}>
-        <div className={classes.curve}></div>
+        <div className={classes.footerContent}>
+          <div className={classes.logo}>
+            <img src="/assests/images/logo.png" alt="megaverse" />
+          </div>
+          <div className={classes.line1}>
+            <h6>
+              More than 10 years in the game and we`re just getting started. 🤝
+            </h6>
+            <button type="button" className={classes.availableBtn}>
+              <img
+                src="/assests/images/footer-available-btn-border.svg"
+                alt=""
+              />
+              Available for new Project
+            </button>
+          </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1291"
+            height="1"
+            viewBox="0 0 1291 1"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1 0.5H1290H1Z"
+              fill="#113A5A"
+            />
+            <path d="M1 0.5H1290" stroke="#113A5A" stroke-linecap="square" />
+          </svg>
+
+          <div className={classes.line2}>
+            <p>© 2023 Megaverse Technologies , All Right Received.</p>
+            <ul>
+              <li>Support</li>
+              <li>Privacy Policy</li>
+              <li>Terms and conditions</li>
+            </ul>
+          </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1291"
+            height="1"
+            viewBox="0 0 1291 1"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1 0.5H1290H1Z"
+              fill="#113A5A"
+            />
+            <path d="M1 0.5H1290" stroke="#113A5A" stroke-linecap="square" />
+          </svg>
+
+          <div className={classes.line3}>
+            <div className={classes.contactUs}>
+              <span>
+                <img src="/assests/images/location.svg" alt="location" />
+                68 Aourangzaib Block New Garden Tow Lahore
+              </span>
+              <span>
+                <img src="/assests/images/mail.svg" alt="mail" />
+                Support@megavers.com
+              </span>
+            </div>
+
+            <ul className={classes.socialMediaIcons}>
+              <li>
+                <img src="/assests/images/linkedin.svg" alt="linkedin" />
+              </li>
+              <li>
+                <img src="/assests/images/facebook.svg" alt="facebook" />
+              </li>
+              <li>
+                <img src="/assests/images/insta.svg" alt="insta" />
+              </li>
+              <li>
+                <img src="/assests/images/youtube.svg" alt="youtube" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

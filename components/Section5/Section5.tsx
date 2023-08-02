@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import StarIcon from "../Stars/Star";
 import FeedbackCard from "./Card/FeedbackCard";
 import classes from "./Section5.module.scss";
 
@@ -8,6 +7,8 @@ import React from "react";
 const Section5 = () => {
   return (
     <div className={classes.section5}>
+      <img className={classes.ribbon} src="/assests/images/ribbon.png" alt="" />
+
       <header className={classes.header}>
         <div className={classes.heading}>
           <img src="/assests/images/blue-disk.png" alt="*" />

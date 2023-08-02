@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import WorkCard from "./Card/WorkCard";
-import Card from "./Card/WorkCard";
 import classes from "./Section4.module.scss";
 
 import React from "react";
