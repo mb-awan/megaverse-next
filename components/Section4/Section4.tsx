@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import WorkCard from "./Card/WorkCard";
+import Card from "./Card/WorkCard";
 import classes from "./Section4.module.scss";
 
 import React from "react";
@@ -7,6 +8,8 @@ import React from "react";
 const Section4 = () => {
   return (
     <div className={classes.section4}>
+      <img className={classes.ribbon} src="/assests/images/ribbon.png" alt="" />
+
       <header className={classes.header}>
         <div className={classes.heading}>
           <img src="/assests/images/blue-disk.png" alt="*" />

@@ -69,21 +69,7 @@ const Section6 = () => {
             </button>
           </div>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1291"
-            height="1"
-            viewBox="0 0 1291 1"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M1 0.5H1290H1Z"
-              fill="#113A5A"
-            />
-            <path d="M1 0.5H1290" stroke="#113A5A" stroke-linecap="square" />
-          </svg>
+          <hr />
 
           <div className={classes.line2}>
             <p>© 2023 Megaverse Technologies , All Right Received.</p>
@@ -94,21 +80,7 @@ const Section6 = () => {
             </ul>
           </div>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1291"
-            height="1"
-            viewBox="0 0 1291 1"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M1 0.5H1290H1Z"
-              fill="#113A5A"
-            />
-            <path d="M1 0.5H1290" stroke="#113A5A" stroke-linecap="square" />
-          </svg>
+          <hr />
 
           <div className={classes.line3}>
             <div className={classes.contactUs}>

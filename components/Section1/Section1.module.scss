@@ -1,7 +1,17 @@
 @import "/app/variables";
 
 .section1 {
-  min-height: 95vh;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .ribbon {
+    position: absolute;
+    width: 10%;
+    height: 80px;
+    bottom: -40px;
+    left: 0px;
+    z-index: 2;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -86,6 +96,14 @@
           }
         }
         .visitCaseBtn {
+          position: relative;
+          .visitBtnCircle {
+            position: absolute;
+            height: 100%;
+            width: 10%;
+            left: 0px;
+            top: 0px;
+          }
           background-color: #3093d5;
           color: #fff;
           border: none;

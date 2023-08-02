@@ -145,9 +145,16 @@
         width: 100%;
       }
 
+      hr {
+        width: 100%;
+        fill: #113a5a;
+        opacity: 0.1;
+        margin-bottom: 1rem;
+      }
+
       .line1 {
         margin-top: 0.7rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 4.5rem;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -187,8 +194,8 @@
       }
 
       .line2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -206,7 +213,7 @@
         }
         ul {
           display: flex;
-          width: 40%;
+          width: 35%;
           justify-content: space-between;
           align-items: center;
 
@@ -257,7 +264,7 @@
           }
         }
         .socialMediaIcons {
-          width: 30%;
+          width: 20%;
 
           display: flex;
           justify-content: space-between;

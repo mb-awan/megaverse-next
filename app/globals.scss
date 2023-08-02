@@ -10,6 +10,7 @@ html {
   font-size: 18px;
   overflow-x: hidden;
 }
+
 body {
   font-size: 1rem;
   font-weight: 400;
@@ -17,4 +18,40 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
+  font-family: "DM Sans";
+}
+
+button {
+  cursor: pointer;
+}
+
+.slick-slider {
+  padding-left: 3%;
+}
+
+.slick-dots {
+  height: 7px;
+}
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #30a8ff; /* Border color of the inactive circle */
+  border-radius: 50%;
+  background-color: transparent; /* Transparent background for the circle */
+  padding: 0;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #30a8ff; /* Fill color of the active circle */
+}
+
+.slick-dots li button:before {
+  content: "" !important;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #30a8ff; /* Border color of the hollow circle */
+  border-radius: 50%;
 }

@@ -5,21 +5,24 @@
   min-height: 100vh;
   padding-top: 3rem;
   overflow-x: hidden;
+  font-family: "DM Sans";
 
   .content {
     width: 80%;
     margin: auto;
     display: flex;
+    justify-content: center;
+    gap: 2%;
+    align-items: center;
     flex-wrap: wrap;
 
     @media screen and (max-width: $xlg-screen) {
       width: 90%;
     }
 
-    justify-content: space-between;
     .whatWeDo {
       margin-bottom: 2rem;
-      width: 48%;
+      width: 40%;
 
       @media screen and (max-width: $md-screen) {
         width: 100%;

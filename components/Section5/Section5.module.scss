@@ -3,8 +3,8 @@
 .section5 {
   background-color: #0a273e;
   min-height: 100vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 
   overflow-x: hidden;
 
@@ -27,7 +27,7 @@
 
     justify-content: space-between;
     .heading {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       width: 48%;
       margin: auto;
       text-align: center;
@@ -50,6 +50,10 @@
         color: #ffffff;
         font-size: 4rem;
         font-weight: 700;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.72px;
 
         @media screen and (max-width: $lg-screen) {
           font-size: 3.5rem;
@@ -66,10 +70,11 @@
 
   .content {
     padding-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 99%;
-    margin: auto;
-    gap: 1%;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    // width: 100%;
+    // margin: auto;
   }
 }

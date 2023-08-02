@@ -4,6 +4,8 @@ import classes from "./Section1.module.scss";
 const Section1 = () => {
   return (
     <div className={classes.section1}>
+      <img className={classes.ribbon} src="/assests/images/ribbon.png" alt="" />
+
       <div className={classes.container}>
         <div className={classes.intro}>
           <h1 className={classes.statementHeading}>
@@ -15,6 +17,11 @@ const Section1 = () => {
           </p>
           <div className={classes.btns}>
             <button type="button" className={classes.visitCaseBtn}>
+              <img
+                className={classes.visitBtnCircle}
+                src="/assests/images/visitBtnCirle.png"
+                alt=""
+              />
               Visit Case Studios
             </button>
             <button type="button" className={classes.aboutBtn}>

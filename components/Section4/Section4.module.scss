@@ -1,6 +1,18 @@
 @import "/app/variables";
 
 .section4 {
+  position: relative;
+  overflow: hidden;
+  font-family: "DM Sans";
+
+  .ribbon {
+    position: absolute;
+    width: 10%;
+    height: 80px;
+    bottom: -40px;
+    right: 0px;
+    z-index: 2;
+  }
   background-color: #ffffff;
   min-height: 100vh;
   padding-top: 3rem;
@@ -55,7 +67,7 @@
     }
 
     .workNavBar {
-      width: 68%;
+      width: 60%;
       @media screen and (max-width: $md-screen) {
         width: 100%;
       }
@@ -75,7 +87,7 @@
             // color: #292930 for active classes
             font-family: "DM Sans";
             font-weight: 500;
-            font-size: 1.7rem;
+            font-size: 1.2rem;
 
             @media screen and (max-width: $xxlg-screen) {
               font-size: 1.5rem;
@@ -115,6 +127,7 @@
       padding: 0;
       display: flex;
       flex-direction: column;
+      align-content: space-between;
     }
   }
 }
