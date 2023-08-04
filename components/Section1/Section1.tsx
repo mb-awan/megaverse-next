@@ -3,10 +3,10 @@ import classes from "./Section1.module.scss";
 
 const Section1 = () => {
   return (
-    <div className={classes.section1}>
+    <div className={classes.section1} id="home">
       <img className={classes.ribbon} src="/assests/images/ribbon.png" alt="" />
 
-      <div className={classes.container}>
+      <div className={classes.content}>
         <div className={classes.intro}>
           <h1 className={classes.statementHeading}>
             We make things look good{" "}
@@ -30,9 +30,13 @@ const Section1 = () => {
             </button>
           </div>
         </div>
-        <div className={classes.computeImage}>
-          <img src="/assests/images/computer.png" alt="computer" />
-        </div>
+        {/* <div className={classes.computerImage}> */}
+        <img
+          className={classes.computerImage}
+          src="/assests/images/computer.png"
+          alt="computer"
+        />
+        {/* </div> */}
         <div className={classes.technologies}>
           <img src="/assests/images/nodejs.png" alt="node" />
           <img src="/assests/images/react.png" alt="react" />

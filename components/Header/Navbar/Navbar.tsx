@@ -1,9 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+
 import classes from "./Navbar.module.scss";
+import React, { useState } from "react";
+// import { scroller } from "react-scroll";
 
 const Navbar = () => {
+  const [selectedBtn, setSelectedBtn] = useState("home");
+
+  const selectHomeHandler = () => {
+    setSelectedBtn("home");
+  };
+
+  const selectContactUsHandler = () => {
+    setSelectedBtn("contactUs");
+    // scroller.scrollTo("footer", {
+    //   smooth: true,
+    //   duration: 1000,
+    //   offset: -50,
+    // });
+  };
+
   return (
     <div className={classes.navbar}>
       <div className={classes.navbackgound}>
@@ -12,12 +30,24 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav>
+      <nav className={classes.navigation}>
         <div className={classes.navLeftBtns}>
-          <button type="button" className={classes.homeBtn}>
+          <button
+            type="button"
+            onClick={selectHomeHandler}
+            className={`${classes.homeBtn} ${
+              selectedBtn === "home" ? classes.activeBtn : ""
+            }`}
+          >
             Home
           </button>
-          <button type="button" className={classes.contactBtn}>
+          <button
+            type="button"
+            onClick={selectContactUsHandler}
+            className={`${classes.contactBtn} ${
+              selectedBtn === "contactUs" ? classes.activeBtn : ""
+            }`}
+          >
             Contact Us
           </button>
         </div>

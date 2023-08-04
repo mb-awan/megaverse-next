@@ -8,7 +8,41 @@ const Section2 = () => {
     <div className={classes.section2}>
       <img className={classes.ribbon} src="/assests/images/ribbon.png" alt="" />
 
-      <img className="eclipseImg" src="/assests/images/Ellipse.png" alt="" />
+      <div className={classes.oneCircleContainer}>
+        <img
+          className={classes.circle}
+          src="/assests/images/circle.png"
+          alt="Circular Image"
+        />
+        <img
+          className={classes.disk1}
+          src="/assests/images/blue-disk.png"
+          alt="*"
+        />
+
+        <img
+          className={classes.disk2}
+          src="/assests/images/blue-disk.png"
+          alt="*"
+        />
+      </div>
+
+      <div className={classes.twoCirclesContainer}>
+        <div className={classes.outerCircle}>
+          <div className={classes.inneCircle}></div>
+        </div>
+        {/* <img
+          className={classes.circle1}
+          src="/assests/images/circle.png"
+          alt="Circular Image"
+        />
+        <img
+          className={classes.circle2}
+          src="/assests/images/circle.png"
+          alt="Circular Image"
+        /> */}
+      </div>
+
       <div className={classes.content}>
         <div className={classes.whatWeDoText}>
           We deploy world-class <span>Web Development</span> on demand. that can
